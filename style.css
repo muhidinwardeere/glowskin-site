@@ -1,0 +1,185 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+  margin-left: 200px; /* For fixed sidebar on desktop */
+}
+
+/* Header */
+header {
+  background-color: #f8e1e7;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #d6336c;
+}
+
+/* Sidebar (default: always visible on desktop) */
+.sidebar {
+  width: 200px;
+  background-color: #fce4ec;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 60px;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  transform: translateX(0); /* Always visible on desktop */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 12px 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #f8bbd0;
+  color: #000;
+}
+
+.sidebar ul li a.active {
+  background-color: #d6336c;
+  color: #fff;
+}
+
+/* Hamburger icon (hidden on desktop) */
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  padding: 15px 20px;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  background-color: #d6336c;
+  color: white;
+  border-bottom-right-radius: 8px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Products */
+#products {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#products ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#products li {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+/* Gallery */
+#gallery {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #dd3f83;
+}
+
+#gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+  justify-items: center;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #f8e1e7;
+  text-align: center;
+  padding: 10px;
+  color: #555;
+}
+
+/* Responsive Design (Mobile) */
+@media (max-width: 768px) {
+  body {
+    margin-left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+}

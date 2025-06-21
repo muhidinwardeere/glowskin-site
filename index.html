@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlowSkin</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="GlowSkin - A modern, responsive skincare website.">
+  <meta name="keywords" content="GlowSkin, skincare, responsive design, natural products">
+</head>
+<body>
+
+  <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+
+  <header>
+    <h1>GlowSkin</h1>
+  </header>
+
+  <nav class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h2>Elevate Your Skincare Routine</h2>
+    <p>GlowSkin combines science and nature to bring you skincare that works. Our product line is designed for all skin types — from gentle cleansers to powerful serums — helping you achieve healthy, glowing skin every day.</p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <ul>
+      <li>Baby Oil</li>
+      <li>Vitamin C Serum</li>
+      <li>CeraVe</li>
+      <li>Dove</li>
+      <li>Face Wash</li>
+      <li>Men's Care</li>
+      <li>Massage Oil</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Our Skincare Line</h2>
+    <div class="gallery">
+      <img src="images/baby-oil.jpg" alt="Baby Oil">
+      <img src="images/vitamin-c-serum.jpg" alt="Vitamin C Serum">
+      <img src="images/cerave.jpg" alt="CeraVe">
+      <img src="images/dove.jpg" alt="Dove">
+      <img src="images/face-wash.jpg" alt="Face Wash">
+      <img src="images/mens-care.jpg" alt="Men's Care">
+      <img src="images/message-oil.jpg" alt="Message Oil">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About GlowSkin</h2>
+    <p><strong>GlowSkin</strong> is more than skincare — it’s a lifestyle. Inspired by the beauty of nature and guided by dermatological care, we create premium products that deliver visible results without compromising on purity.</p>
+    <p>From nourishing serums to refreshing cleansers, each formula is infused with the finest ingredients to reveal your skin’s natural radiance. We stand for clean beauty, confidence, and care — because you deserve to feel beautiful in your own skin.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:susojini2942@gmail.com">susojini2942@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/susojini2942" target="_blank">@susojini2942</a></p>
+    <p>Phone Number: +254 729 425 650</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GlowSkin. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
